@@ -1,0 +1,328 @@
+.pilares-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.pilar-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 12px;
+    padding: 2rem;
+    color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pilar-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+.pilar-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.pilar-card h3 {
+    color: white;
+    margin-top: 0;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.pilar-content p {
+    line-height: 1.6;
+    margin: 0.8rem 0;
+}
+
+.pilar-card h4 {
+    color: rgba(255, 255, 255, 0.95);
+    margin: 1.2rem 0 0.8rem 0;
+}
+
+.pilar-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0.8rem 0;
+}
+
+.pilar-card li {
+    padding: 0.5rem 0;
+    line-height: 1.5;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.pilar-card li:last-child {
+    border-bottom: none;
+}
+
+.pilar-card li:before {
+    content: "→ ";
+    margin-right: 0.5rem;
+}
+
+.beneficio-box {
+    background: rgba(255, 255, 255, 0.15);
+    border-left: 3px solid rgba(255, 255, 255, 0.5);
+    padding: 1rem;
+    border-radius: 6px;
+    margin-top: 1.2rem;
+    font-size: 0.95rem;
+}
+
+.relacion-section {
+    background: #f0f4ff;
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 3rem 0;
+}
+
+.relacion-section h2 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.relacion-diagram {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.relacion-item {
+    background: white;
+    border-left: 4px solid #667eea;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.relacion-item strong {
+    color: #667eea;
+}
+
+.relacion-item p {
+    margin: 0.5rem 0 0 0;
+    color: #555;
+    font-weight: 500;
+}
+
+.plan-implementacion {
+    background: #fffbf0;
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 3rem 0;
+}
+
+.plan-implementacion h2 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.plan-implementacion > p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.semana-item {
+    background: white;
+    border: 2px solid #ffc107;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+}
+
+.semana-item h4 {
+    color: #2c3e50;
+    margin-top: 0;
+    font-size: 1.1rem;
+}
+
+.semana-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0.8rem 0 0 0;
+}
+
+.semana-item li {
+    padding: 0.6rem 0;
+    color: #555;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.semana-item li:last-child {
+    border-bottom: none;
+}
+
+.semana-item li:before {
+    content: "✓ ";
+    color: #27ae60;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.senales-section {
+    background: #fff5f5;
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 3rem 0;
+}
+
+.senales-section h2 {
+    color: #c0392b;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.senales-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.senal-card {
+    background: white;
+    border-left: 4px solid #e74c3c;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.senal-card h4 {
+    color: #c0392b;
+    margin-top: 0;
+}
+
+.senal-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0.8rem 0;
+}
+
+.senal-card li {
+    padding: 0.5rem 0;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.senal-card li:before {
+    content: "• ";
+    color: #e74c3c;
+    margin-right: 0.5rem;
+}
+
+.ejercicios-section {
+    margin: 3rem 0;
+}
+
+.ejercicios-section h2 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.ejercicio-item {
+    background: white;
+    border: 2px solid #27ae60;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 1.5rem 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.ejercicio-item h3 {
+    color: #27ae60;
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+.duracion {
+    background: #ecf9f0;
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #27ae60;
+    font-weight: 600;
+    margin: 0.5rem 0;
+}
+
+.ejercicio-item > p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.ejercicio-item p strong {
+    color: #2c3e50;
+}
+
+.ejercicio-item ol {
+    color: #555;
+    line-height: 1.8;
+}
+
+.ejercicio-item li {
+    margin: 0.8rem 0;
+}
+
+.conclusion-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 12px;
+    padding: 3rem 2rem;
+    margin: 3rem 0;
+    text-align: center;
+    color: white;
+}
+
+.conclusion-section h2 {
+    color: white;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.conclusion-box {
+    background: rgba(255, 255, 255, 0.1);
+    border-left: 4px solid rgba(255, 255, 255, 0.5);
+    padding: 2rem;
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+}
+
+.conclusion-box p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin: 1rem 0;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.conclusion-box p strong {
+    color: white;
+    display: block;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.conclusion-box p:first-child strong {
+    margin-top: 0;
+}
+
+@media (max-width: 768px) {
+    .pilares-container {
+        grid-template-columns: 1fr;
+    }
+
+    .senales-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .conclusion-section {
+        padding: 2rem 1.5rem;
+    }
+
+    .conclusion-box {
+        padding: 1.5rem;
+    }
+}

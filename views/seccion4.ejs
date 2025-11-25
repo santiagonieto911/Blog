@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sección 4 - Toolkits de atención, concentración y memoria</title>
+    <link rel="stylesheet" href="/css/seccion1.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo">TempoThink</a>
+            <ul class="nav-menu">
+                <li><a href="/inicio" class="nav-link">Dashboard</a></li>
+                <li><a href="/about" class="nav-link">Acerca de mí</a></li>
+                <li><a href="/secciones" class="nav-link">Secciones</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="seccion-header">
+        <h1>🧰 Toolkits de atención, concentración y memoria</h1>
+        <p>Aplicaciones y herramientas prácticas para mejorar foco y memoria</p>
+    </section>
+
+    <section class="seccion-detalle">
+        <div class="container">
+            <a href="/inicio" class="back-link">← Volver al Dashboard</a>
+
+            <div class="infografico-container">
+                <h2>📊 Mi Infográfico</h2>
+                <div class="infografico-display">
+                    <iframe id="pdf-viewer" src="/uploads/infografico.pdf#toolbar=1" style="width: 100%; height: 600px; border: 1px solid #ddd; border-radius: 8px;"></iframe>
+                    <p style="margin-top: 1rem; text-align: center; color: #666;">
+                        <a href="/uploads/infografico.pdf" download style="color: #3498db; text-decoration: none; font-weight: 500;">📥 Descargar PDF</a>
+                    </p>
+                </div>
+
+                <h2 style="margin-top: 3rem;">🛠️ Herramientas recomendadas</h2>
+
+                <div class="impacto-container">
+                    <div class="impacto-card">
+                        <span class="impacto-icon">⏱️</span>
+                        <h3>Flipd</h3>
+                        <p>Bloquea aplicaciones distractivas del móvil por períodos determinados. Incluye música relajante y seguimiento de estadísticas de productividad y tiempo bien empleado.</p>
+                    </div>
+
+                    <div class="impacto-card">
+                        <span class="impacto-icon">♟️</span>
+                        <h3>Ajedrez</h3>
+                        <p>Útil para la concentración: obliga a mantener la atención, recordar patrones, planear movimientos y controlar impulsos para evitar distracciones.</p>
+                    </div>
+
+                    <div class="impacto-card">
+                        <span class="impacto-icon">🧠</span>
+                        <h3>CogniFit</h3>
+                        <p>Plataforma que ofrece evaluaciones y entrenamiento personalizado de habilidades cognitivas (memoria, razonamiento, atención) mediante juegos con base científica.</p>
+                    </div>
+
+                    <div class="impacto-card">
+                        <span class="impacto-icon">✅</span>
+                        <h3>Todoist</h3>
+                        <p>Aplicación de gestión de tareas que facilita organización, seguimiento y finalización de tareas y proyectos, mejorando la productividad individual y en equipo.</p>
+                    </div>
+                </div>
+                <div id="upload-result" style="margin-top:1rem;"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 TempoThink - Administración del Tiempo.</p>
+        </div>
+    </footer>
+</body>
+</html>

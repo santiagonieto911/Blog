@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - TempoThink</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <style>
+        .desercion-section { margin: 2rem 0; }
+        .desercion-content { line-height: 1.8; color: #333; }
+        .desercion-content h3 { margin-top: 1.5rem; margin-bottom: 0.75rem; color: #2c3e50; font-size: 1.2rem; }
+        .desercion-content ul { margin: 1rem 0 1rem 2rem; }
+        .desercion-content li { margin-bottom: 0.5rem; }
+        .btn-secciones { display: inline-block; margin: 2rem auto; padding: 12px 24px; background: #007acc; color: white; text-decoration: none; border-radius: 6px; font-weight: 600; transition: background 0.3s; text-align: center; }
+        .btn-secciones:hover { background: #005fa3; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo">TempoThink</a>
+            <ul class="nav-menu">
+                <li><a href="/inicio" class="nav-link">Dashboard</a></li>
+                <li><a href="/about" class="nav-link">Acerca de mí</a></li>
+                <li><a href="/secciones" class="nav-link">Secciones</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Administración del Tiempo</h1>
+            
+            <!-- Carrusel de Tips Tipo Presentación -->
+            <div class="tips-carousel">
+                <!-- Botón anterior -->
+                <button class="carousel-arrow prev-arrow" id="prevBtn">❮</button>
+                
+                <div class="tips-container">
+                    <div class="tip-slide active">
+                        <h2 class="autor-nombre">Por Santiago Nieto</h2>
+                        <p class="slide-indicator"></p>Estrategias de restablecimiento de hábitos académicos</p>
+                    </div>
+                    
+                    <div class="tip-slide">
+                        <div class="tip-icon">📋</div>
+                        <h3>Consejo 1</h3>
+                        <p>Planifica tu semana cada domingo durante 30 minutos. Te ahorrará estrés el resto de los días</p>
+                    </div>
+                    
+                    <div class="tip-slide">
+                        <div class="tip-icon">🎯</div>
+                        <h3>Consejo 2</h3>
+                        <p>Usa la técnica Pomodoro: 25 minutos de trabajo concentrado + 5 minutos de descanso</p>
+                    </div>
+                    
+                    <div class="tip-slide">
+                        <div class="tip-icon">⏰</div>
+                        <h3>Consejo 3</h3>
+                        <p>Establece metas SMART: Específicas, Medibles, Alcanzables, Relevantes y con Tiempo definido</p>
+                    </div>
+                    
+                    <div class="tip-slide">
+                        <div class="tip-icon">😴</div>
+                        <h3>Consejo 4</h3>
+                        <p>Duerme 8 horas diarias. Tu productividad depende más del descanso que del trabajo extra</p>
+                    </div>
+                    
+                    <div class="tip-slide">
+                        <div class="tip-icon">📱</div>
+                        <h3>Consejo 5</h3>
+                        <p>Apaga notificaciones durante tus bloques de trabajo. Solo necesitas revisar cada 2 horas</p>
+                    </div>
+                    
+                    <div class="tip-slide">
+                        <div class="tip-icon">🧠</div>
+                        <h3>Consejo 6</h3>
+                        <p>Aprende a decir "no". Protege tu tiempo de las actividades que no alinean con tus objetivos</p>
+                    </div>
+                    
+                    <div class="tip-slide">
+                        <div class="tip-icon">💚</div>
+                        <h3>Consejo 7</h3>
+                        <p>Practica el autocuidado. No puedes dar lo mejor de ti si tu bienestar está comprometido</p>
+                    </div>
+                    
+                    <div class="tip-slide">
+                        <div class="tip-icon">⏲️</div>
+                        <h3>Consejo 8</h3>
+                        <p>La técnica Pomodoro funciona: 25 minutos intensos de trabajo + 5 minutos descanso. Después de 4 ciclos, un descanso de 15-30 minutos</p>
+                    </div>
+                    
+                    <div class="tip-slide">
+                        <div class="tip-icon">📲</div>
+                        <h3>Consejo 9</h3>
+                        <p>Usa aplicaciones para administrar tu tiempo: Todoist, Google Calendar, Notion. Las herramientas correctas multiplican tu productividad</p>
+                    </div>
+                </div>
+                
+                <!-- Botón siguiente -->
+                <button class="carousel-arrow next-arrow" id="nextBtn">❯</button>
+                
+                <!-- Indicadores de progreso -->
+                <div class="carousel-indicators">
+                    <span class="indicator active" data-slide="0"></span>
+                    <span class="indicator" data-slide="1"></span>
+                    <span class="indicator" data-slide="2"></span>
+                    <span class="indicator" data-slide="3"></span>
+                    <span class="indicator" data-slide="4"></span>
+                    <span class="indicator" data-slide="5"></span>
+                    <span class="indicator" data-slide="6"></span>
+                    <span class="indicator" data-slide="7"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Dashboard de Administración de Tiempo -->
+    <section class="time-dashboard">
+        <div class="container">
+            <h2>Administración de Tiempo</h2>
+            <div class="dashboard-grid">
+                <div class="time-card">
+                    <div class="time-display">
+                        <span id="hora">00:00</span>
+                        <span id="ampm">AM</span>
+                    </div>
+                    <p>Hora Actual</p>
+                </div>
+                <div class="time-card">
+                    <div class="time-display">
+                        <span id="fecha">-</span>
+                    </div>
+                    <p>Fecha</p>
+                </div>
+                <div class="time-card">
+                    <div class="time-display">
+                        <span id="dia">-</span>
+                    </div>
+                    <p>Día de la Semana</p>
+                </div>
+                <div class="time-card">
+                    <div class="progress-circle">
+                        <svg viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45" class="progress-bg"></circle>
+                            <circle cx="50" cy="50" r="45" class="progress-fill" id="progressCircle"></circle>
+                        </svg>
+                        <span id="porcentaje">0%</span>
+                    </div>
+                    <p>Día Completado</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Artículo: Deserción Escolar en Jóvenes por Temas Laborales -->
+    <section class="desercion-section">
+        <div class="container">
+            <h2>📚 Deserción Escolar en Jóvenes por Temas Laborales</h2>
+            <div class="desercion-content">
+                <p>La deserción escolar en México representa un problema persistente, especialmente en los niveles medio superior y superior. Aunque cada vez más jóvenes logran ingresar a estos niveles educativos, muchos optan por abandonar sus estudios para incorporarse al mercado laboral, aun cuando las condiciones de empleo no siempre son favorables.</p>
+
+                <h3>El Problema</h3>
+                <p>La desconexión entre educación y oportunidades laborales genera una fuerte desmotivación. Los estudiantes cuestionan el valor práctico de continuar su formación académica cuando perciben que trabajar podría ofrecerles ingresos inmediatos.</p>
+
+                <h3>Causas Principales</h3>
+                <ul>
+                    <li><strong>Presión económica:</strong> Necesidad de generar ingresos para la familia o para sí mismos.</li>
+                    <li><strong>Falta de acompañamiento escolar:</strong> Ausencia de programas de tutoría efectivos y personal capacitado.</li>
+                    <li><strong>Bajo rendimiento académico:</strong> Desmotivación acumulativa que dificulta continuar.</li>
+                    <li><strong>Inadaptabilidad institucional:</strong> Escuelas con poca capacidad para adaptar sus programas a necesidades reales.</li>
+                </ul>
+
+                <h3>Impacto</h3>
+                <p>Esta deserción limita las oportunidades futuras de los jóvenes, pues trabajos sin educación formal suelen ofrecer peores condiciones de empleo y menor movilidad laboral. Es un ciclo que perpetúa la desigualdad.</p>
+
+                <h3>Soluciones Integrales</h3>
+                <p>Se requieren estrategias que combinen apoyo económico directo, fortalecimiento de acompañamiento institucional, y programas que demuestren la relevancia de la educación para el mercado laboral actual.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Semestre Agosto-Diciembre.</p>
+        </div>
+    </footer>
+
+    <script src="/js/time.js"></script>
+</body>
+</html>

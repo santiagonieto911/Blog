@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/seccion-generica.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo">TempoThink</a>
+            <ul class="nav-menu">
+                <li><a href="/inicio" class="nav-link">Dashboard</a></li>
+                <li><a href="/about" class="nav-link">Acerca de mí</a></li>
+                <li><a href="/secciones" class="nav-link">Secciones</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="seccion-detalle">
+        <div class="container">
+            <a href="/inicio" class="back-link">← Volver al Dashboard</a>
+            <h1>Sección <%= id %></h1>
+            <div class="seccion-content">
+                <p>Contenido de la sección <%= id %> próximamente...</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Semestre Agosto-Diciembre.</p>
+        </div>
+    </footer>
+</body>
+</html>

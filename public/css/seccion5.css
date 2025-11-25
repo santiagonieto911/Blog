@@ -1,0 +1,160 @@
+.apps-reseña-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+@media (max-width: 768px) {
+    .apps-reseña-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.app-card {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.app-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.app-card h2 {
+    color: #2c3e50;
+    margin-top: 0;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.app-card h3 {
+    color: #34495e;
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.app-card p {
+    line-height: 1.8;
+    color: #555;
+    margin: 0.8rem 0;
+}
+
+.app-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.app-card li {
+    padding: 0.6rem 0;
+    color: #555;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    line-height: 1.6;
+}
+
+.app-card li:last-child {
+    border-bottom: none;
+}
+
+.ventajas-list li:before {
+    content: "✓ ";
+    color: #27ae60;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.desventajas-list li:before {
+    content: "⚠ ";
+    margin-right: 0.5rem;
+}
+
+.app-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.comparativa-section {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 3rem 0;
+}
+
+.comparativa-section h2 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.comparativa-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.comparativa-table th {
+    background: #34495e;
+    color: white;
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+.comparativa-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #ecf0f1;
+    color: #555;
+}
+
+.comparativa-table tr:hover {
+    background: #f9f9f9;
+}
+
+.recomendacion-final {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.recomendacion-final h3 {
+    color: white;
+    margin-top: 0;
+}
+
+.recomendacion-final p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.uso-combo {
+    background: #fff3cd;
+    border-left: 4px solid #ffc107;
+    padding: 1.5rem;
+    border-radius: 6px;
+    margin: 2rem 0;
+}
+
+.uso-combo h4 {
+    color: #856404;
+    margin-top: 0;
+}
+
+.uso-combo p {
+    color: #856404;
+    margin: 0.5rem 0;
+}

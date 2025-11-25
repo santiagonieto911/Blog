@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secciones - TempoThink</title>
+    <link rel="stylesheet" href="/css/seccion-generica.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <style>
+        .secciones-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:18px; }
+        .seccion-card { display:block; padding:16px; background:#fff; border-radius:8px; box-shadow:0 1px 3px rgba(0,0,0,0.06); text-decoration:none; color:inherit; }
+        .seccion-icon { font-size:28px; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo">TempoThink</a>
+            <ul class="nav-menu">
+                <li><a href="/inicio" class="nav-link">Dashboard</a></li>
+                <li><a href="/about" class="nav-link">Acerca de mí</a></li>
+                <li><a href="/secciones" class="nav-link">Secciones</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="seccion-header">
+        <div class="container">
+            <h1>Secciones</h1>
+            <p>Explora las secciones de mi blog sobre administración del tiempo</p>
+        </div>
+    </section>
+
+    <section class="seccion-detalle">
+        <div class="container">
+            <a href="/inicio" class="back-link">← Volver al Dashboard</a>
+
+            <div class="secciones-list">
+                <h2>Las 7 Secciones de Mi Blog</h2>
+                <div class="secciones-grid">
+                    <a href="/seccion/1" class="seccion-card">
+                        <div class="seccion-icon">👤</div>
+                        <h3>Administración</h3>
+                        <p>Guía visual de administración del tiempo</p>
+                    </a>
+                    <a href="/seccion/2" class="seccion-card">
+                        <div class="seccion-icon">🌟</div>
+                        <h3>Hábitos Exitosos</h3>
+                        <p>Los secretos de personas que triunfan</p>
+                    </a>
+                    <a href="/seccion/3" class="seccion-card">
+                        <div class="seccion-icon">💡</div>
+                        <h3>Métodos para Aprender</h3>
+                        <p>Consejos prácticos y organización del tiempo</p>
+                    </a>
+                    <a href="/seccion/4" class="seccion-card">
+                        <div class="seccion-icon">🧰</div>
+                        <h3>Toolkits</h3>
+                        <p>Apps y ejercicios para mejorar concentración y memoria</p>
+                    </a>
+                    <a href="/seccion/5" class="seccion-card">
+                        <div class="seccion-icon">📱</div>
+                        <h3>Reseña de Apps</h3>
+                        <p>Todoist y Freedom</p>
+                    </a>
+                    <a href="/seccion/6" class="seccion-card">
+                        <div class="seccion-icon">💚</div>
+                        <h3>Autocuidado</h3>
+                        <p>Estrategias para tu bienestar emocional y físico</p>
+                    </a>
+                    <a href="/seccion/7" class="seccion-card">
+                        <div class="seccion-icon">🎬</div>
+                        <h3>Videopodcast</h3>
+                        <p>Mi videopodcast sobre administración del tiempo</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 TempoThink - Administración del Tiempo.</p>
+        </div>
+    </footer>
+</body>
+</html>
